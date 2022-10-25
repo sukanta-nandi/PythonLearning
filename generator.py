@@ -1,3 +1,7 @@
+# Ref: https://www.geeksforgeeks.org/generators-in-python/
+# Ref: https://www.programiz.com/python-programming/generator
+
+
 # A generator function that yields 1 for first time,
 # 2 second time and 3 third time
 def simpleGeneratorFun():
