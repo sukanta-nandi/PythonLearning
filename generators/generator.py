@@ -45,5 +45,27 @@ def fib(limit):
         a, b = b, a + b
 
 
-for x in fib(10):
+for x in fib(50):
     print(x, end=" ")
+print()
+
+
+# Run without limit
+# A simple generator for Fibonacci Numbers
+def fib2(n):
+     
+    # Initialize first two Fibonacci Numbers
+    a, b = 0, 1
+    count = 0
+    
+    # One by one yield next Fibonacci Number
+    while count < n:
+        yield a
+        a, b = b, a + b
+        count += 1
+
+
+nfib = fib2(10)
+print("N fibonacci numbers")
+for fibnum in nfib:
+    print(fibnum, end=" ")
