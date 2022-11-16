@@ -3,6 +3,7 @@
 
 import os
 current_path = os.path.dirname(os.path.abspath(__file__))
+print(os.path.abspath(__file__))
 print(current_path)
 
 # a file named "geek", will be opened with the reading mode.
